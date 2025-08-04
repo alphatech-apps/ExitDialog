@@ -21,3 +21,5 @@ Step 2. Add the dependency
 	        implementation 'com.github.alphatech-apps:ExitDialog:1.0.2'
 	}
 
+## Screenshots
+![](https://github.com/alphatech-apps/CustomDialog-Singleitem/blob/master/Screenshots/exit.png)
