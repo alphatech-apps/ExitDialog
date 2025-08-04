@@ -22,4 +22,4 @@ Step 2. Add the dependency
 	}
 
 ## Screenshots
-![](https://github.com/alphatech-apps/CustomDialog-Singleitem/blob/master/Screenshots/exit.png)
+![](https://github.com/alphatech-apps/ExitDialog/blob/master/Screenshots/exit.png)
