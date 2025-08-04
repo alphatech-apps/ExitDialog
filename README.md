@@ -1,25 +1,122 @@
+
+# ExitDialog
+### LATEST-VERSION
 [![](https://jitpack.io/v/alphatech-apps/ExitDialog.svg)](https://jitpack.io/#alphatech-apps/ExitDialog)
 
-How to
-To get a Git project into your build:
 
-Step 1. Add the JitPack repository to your build file
-
-Add it in your root settings.gradle at the end of repositories:
-
-	dependencyResolutionManagement {
-		repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
-		repositories {
-			mavenCentral()
-			maven { url 'https://jitpack.io' }
-		}
+## Install
+Add it in your root `build.gradle` at the end of repositories:
+```gradle
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+    }
+}
+```
+Add the dependency:
+```gradle
+dependencies {
+	    implementation 'com.github.alphatech-apps:ExitDialog:LATEST-VERSION'
 	}
- 
-Step 2. Add the dependency
+```
 
-	dependencies {
-	        implementation 'com.github.alphatech-apps:ExitDialog:1.0.2'
-	}
+## Features
+* Day Night
+
+## Usage
+
+[//]: # ()
+[//]: # (Add view to your layout:)
+
+[//]: # (```xml)
+
+[//]: # ()
+[//]: # ( ```)
+
+Setup JAVA:
+ ```java
+new Exit_Dialog(MainActivity.this).show();
+ ```
+
+[//]: # ()
+[//]: # (or add other >>>>)
+
+[//]: # ()
+[//]: # ( ```java)
+
+[//]: # ()
+[//]: # ( ```)
+
+[//]: # ()
+[//]: # (Listeners:)
+
+[//]: # ()
+[//]: # ( ```java)
+
+[//]: # ()
+[//]: # ( ```)
+
+[//]: # ()
+[//]: # ()
+[//]: # (Other Methods on Menu Preference:)
+
+[//]: # ()
+[//]: # (```java)
+
+[//]: # ()
+[//]: # (```)
+
+[//]: # (.)
+
+[//]: # (.)
+
+[//]: # (.)
+
+[//]: # (.)
+
+[//]: # (.)
+
+[//]: # (.)
+
+[//]: # ()
+## full activity for example
+.....................
+
+[//]: # (activity_main:)
+
+[//]: # (```xml)
+
+[//]: # ()
+[//]: # ( ```)
+
+MainActivity:
+```java
+
+ public class MainActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        EdgeToEdge.enable(this);
+        setContentView(R.layout.activity_main);
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
+            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
+            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
+            return insets;
+        });
+
+        getOnBackPressedDispatcher().addCallback(new OnBackPressedCallback(true) {
+            @Override
+            public void handleOnBackPressed() {
+                new Exit_Dialog(MainActivity.this).show();
+            }
+        });
+    }
+}
+```
 
 ## Screenshots
 ![](https://github.com/alphatech-apps/ExitDialog/blob/master/Screenshots/exit.png)
