@@ -8,7 +8,7 @@
         android:id="@+id/main_exit_dialog"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:cardCornerRadius="15dp"
+        app:cardCornerRadius="25dp"
         app:cardElevation="0dp">
 
         <LinearLayout
@@ -51,9 +51,9 @@
                 android:fontFamily="@font/roboto_bold"
                 android:gravity="center"
                 android:padding="10dp"
-                android:text="Do you want to Exit !"
+                android:text="@string/do_you_want_to_exit"
                 android:textColor="@color/DayBlack_NightWhite"
-                android:textSize="18sp" />
+                android:textSize="20sp" />
 
 
             <LinearLayout
@@ -72,7 +72,7 @@
                     android:paddingTop="7dp"
                     android:paddingRight="14dp"
                     android:paddingBottom="7dp"
-                    android:text="Cancel"
+                    android:text="@string/cancel"
                     android:textColor="@color/fabColor"
                     android:textSize="16sp"
                     android:textStyle="bold" />
@@ -85,10 +85,10 @@
                     android:layout_marginLeft="15dp"
                     android:background="@drawable/green_fill_button_background"
                     android:paddingLeft="30dp"
-                    android:paddingTop="7dp"
+                    android:paddingTop="8dp"
                     android:paddingRight="30dp"
-                    android:paddingBottom="7dp"
-                    android:text="Exit"
+                    android:paddingBottom="8dp"
+                    android:text="@string/exit"
                     android:textColor="#fff"
                     android:textSize="16sp"
                     android:textStyle="bold" />

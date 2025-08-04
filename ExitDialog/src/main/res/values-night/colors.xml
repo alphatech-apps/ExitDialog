@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="DayBlack_NightWhite">#FFFFFF</color>
+    <color name="fabColor">#FF3F3F</color>
+    <color name="fabColorDark">#D10B00</color>
+
 </resources>

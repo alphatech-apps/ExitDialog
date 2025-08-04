@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="exit">Exit</string>
+    <string name="cancel">Cancel</string>
+    <string name="do_you_want_to_exit">Do you want to Exit !</string>
+</resources>
