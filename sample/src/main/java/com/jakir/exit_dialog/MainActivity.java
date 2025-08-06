@@ -9,7 +9,8 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-import com.jakir.exitdialog.Exit_Dialog;
+import com.jakir.exitdialog.Exit_Dialog_Custom;
+import com.jakir.exitdialog.Exit_Dialog_Material;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -27,7 +28,9 @@ public class MainActivity extends AppCompatActivity {
         getOnBackPressedDispatcher().addCallback(new OnBackPressedCallback(true) {
             @Override
             public void handleOnBackPressed() {
-                new Exit_Dialog(MainActivity.this).show();
+                new Exit_Dialog_Custom(MainActivity.this).show();
+                new Exit_Dialog_Material(MainActivity.this).showDialog(false);
+                new Exit_Dialog_Material(MainActivity.this).showDialog(true);
             }
         });
     }
