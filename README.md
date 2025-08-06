@@ -19,7 +19,7 @@ dependencyResolutionManagement {
 Add the dependency:
 ```gradle
 dependencies {
-	    implementation 'com.github.alphatech-apps:ExitDialog:LATEST-VERSION'
+	    implementation 'com.github.alphatech-apps:ExitDialog:LATESTVERSION'
 	}
 ```
 
