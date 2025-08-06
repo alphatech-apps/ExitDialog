@@ -25,6 +25,7 @@ dependencies {
 
 ## Features
 * Day Night
+* Material/Custom Design
 
 ## Usage
 
@@ -38,7 +39,13 @@ dependencies {
 
 Setup JAVA:
  ```java
-new Exit_Dialog(MainActivity.this).show();
+                new Exit_Dialog_Custom(MainActivity.this).show();
+ ```
+ ```java
+                new Exit_Dialog_Material(MainActivity.this).showDialog(false);
+  ```
+```java
+                new Exit_Dialog_Material(MainActivity.this).showDialog(true);
  ```
 
 [//]: # ()
@@ -111,7 +118,9 @@ MainActivity:
         getOnBackPressedDispatcher().addCallback(new OnBackPressedCallback(true) {
             @Override
             public void handleOnBackPressed() {
-                new Exit_Dialog(MainActivity.this).show();
+                new Exit_Dialog_Custom(MainActivity.this).show();
+                new Exit_Dialog_Material(MainActivity.this).showDialog(false);
+                new Exit_Dialog_Material(MainActivity.this).showDialog(true);
             }
         });
     }
@@ -119,4 +128,6 @@ MainActivity:
 ```
 
 ## Screenshots
-![](https://github.com/alphatech-apps/ExitDialog/blob/master/Screenshots/exit.png)
+![](https://github.com/alphatech-apps/ExitDialog/blob/master/Screenshots/1.png)
+![](https://github.com/alphatech-apps/ExitDialog/blob/master/Screenshots/2.png)
+![](https://github.com/alphatech-apps/ExitDialog/blob/master/Screenshots/3.png)
