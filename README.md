@@ -41,9 +41,11 @@ Setup JAVA:
  ```java
                 new Exit_Dialog_Custom(MainActivity.this).show();
  ```
+or
  ```java
                 new Exit_Dialog_Material(MainActivity.this).showDialog(false);
   ```
+or
 ```java
                 new Exit_Dialog_Material(MainActivity.this).showDialog(true);
  ```
