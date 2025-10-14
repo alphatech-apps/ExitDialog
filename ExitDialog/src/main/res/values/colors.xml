@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="DayBlack_NightWhite">#000000</color>
+    <color name="fabColor">?colorPrimary</color>
+<!--
     <color name="fabColor">#FF0F00</color>
-    <color name="fabColorDark">#FF0F00</color>
+-->
+    <color name="fabColorDark">?colorPrimary</color>
 </resources>
