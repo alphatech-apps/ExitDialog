@@ -7,7 +7,7 @@
                 <shape android:shape="rectangle">
                     <corners android:radius="50dp" />
                     <solid android:color="#50FF0000" />
-                    <stroke android:width="2dp" android:color="@color/fabColor" />
+                    <stroke android:width="2dp" android:color="?colorPrimary" />
                     <padding android:bottom="0dp" android:left="0dp" android:right="0dp" android:top="0dp" />
                     <size android:width="0dp" android:height="0dp" />
                 </shape>
@@ -19,7 +19,7 @@
         <layer-list>
             <item android:bottom="0dp" android:left="0dp" android:right="0dp" android:top="0dp">
                 <shape android:shape="rectangle">
-                    <solid android:color="@color/fabColorDark" />
+                    <solid android:color="?colorPrimary" />
                     <corners android:radius="50dp" />
                     <padding android:bottom="0dp" android:left="0dp" android:right="0dp" android:top="0dp" />
                     <size android:width="0dp" android:height="0dp" />
