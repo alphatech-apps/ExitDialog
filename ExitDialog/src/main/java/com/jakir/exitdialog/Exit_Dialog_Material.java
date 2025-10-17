@@ -3,7 +3,6 @@ package com.jakir.exitdialog;
 import android.app.Activity;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
 
 import androidx.appcompat.app.AlertDialog;
 
@@ -29,12 +28,12 @@ public class Exit_Dialog_Material {
         LottieAnimationView animation_p = view.findViewById(R.id.animation_p);
         animation_p.playAnimation();
 
-        Button cancelx = view.findViewById(R.id.cance_tv);
-        Button okx = view.findViewById(R.id.ok_tv);
-        cancelx.setOnClickListener(view1 -> {
+        Button btn_cancel = view.findViewById(R.id.btn_cancel);
+        Button btn_exit = view.findViewById(R.id.btn_exit);
+        btn_cancel.setOnClickListener(view1 -> {
             dialog.dismiss();
         });
-        okx.setOnClickListener(view1 -> {
+        btn_exit.setOnClickListener(view1 -> {
             activity.finishAffinity();
             System.exit(0);
         });

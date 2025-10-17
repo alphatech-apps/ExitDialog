@@ -5,7 +5,6 @@ import android.app.Dialog;
 import android.os.Bundle;
 import android.view.Window;
 import android.widget.Button;
-import android.widget.TextView;
 
 import com.airbnb.lottie.LottieAnimationView;
 
@@ -26,12 +25,12 @@ public class Exit_Dialog_Custom extends Dialog {
         getWindow().getAttributes().windowAnimations = R.style.DialogAnimation_fade_in_zoom; //dialog animation
         setContentView(R.layout.exit_dialog_layout_custom);
 
-        Button cancelx = findViewById(R.id.cance_tv);
-        Button okx = findViewById(R.id.ok_tv);
-        cancelx.setOnClickListener(view1 -> {
+        Button btn_cancel = findViewById(R.id.btn_cancel);
+        Button btn_exit = findViewById(R.id.btn_exit);
+        btn_cancel.setOnClickListener(view1 -> {
             dismiss();
         });
-        okx.setOnClickListener(view1 -> {
+        btn_exit.setOnClickListener(view1 -> {
             activity.finishAffinity();
             System.exit(0);
         });
