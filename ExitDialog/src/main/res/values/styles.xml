@@ -2,8 +2,7 @@
 <resources>
 
     <style name="DialogAnimation_fade_in_zoom">
-<!--        <item name="android:windowEnterAnimation">@anim/dialog_fade_in_zoom_animation</item>-->
-        <item name="android:windowEnterAnimation">@anim/dialog_slide_out_down_animation</item>
+        <item name="android:windowEnterAnimation">@anim/dialog_fade_in_zoom_animation</item>
         <item name="android:windowExitAnimation">@anim/dialog_slide_out_down_animation</item>
     </style>
 
